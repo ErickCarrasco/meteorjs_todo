@@ -32,7 +32,7 @@ export const LoginForm = () => {
                 <label htmlFor="password">Password</label>
 
                 <input
-                    type="text"
+                    type="password"
                     placeholder="Password"
                     name="password"
                     required

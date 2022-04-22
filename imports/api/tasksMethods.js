@@ -24,6 +24,7 @@ Meteor.methods({
       throw new Meteor.Error('Not authorized.');
     }
     const task = TasksCollections.findOne({_id: taskId, userId: this.userId})
+
     if(!task){
         throw new Meteor.error('Access denied')
     }
@@ -39,7 +40,6 @@ Meteor.methods({
     }
 
     const task = TasksCollections.findOne({_id: taskId, userId: this.userId})
-
     if(!task){
         throw new Meteor.error('Access denied')
     }
