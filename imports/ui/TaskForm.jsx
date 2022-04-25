@@ -7,6 +7,7 @@ export const TaskForm = ({user}) =>{
 
     const handleSubmit = e =>{
         e.preventDefault();
+        //
 
         if(!text) return;
 
